@@ -12,8 +12,8 @@ function loadConfigFromEnv() {
       }
       if (!(key in target)) {
         target[key] = {};
-        target = target[key];
       }
+      target = target[key];
     });
   }
   return env.misskey;
