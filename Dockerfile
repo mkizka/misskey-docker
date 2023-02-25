@@ -13,4 +13,4 @@ ARG MISSKEY_URL
 ARG MISSKEY_PORT
 
 COPY env.js ./
-RUN mkdir .config && node env.js > .config/default.yaml
+RUN mkdir .config && node env.js > .config/default.yml
