@@ -13,4 +13,4 @@ ARG MISSKEY_URL
 ARG MISSKEY_PORT
 
 COPY env.js ./
-RUN mkdir .config && node env.js > .config/default.yml
+CMD mkdir .config && node env.js > .config/default.yml && pnpm run migrateandstart
